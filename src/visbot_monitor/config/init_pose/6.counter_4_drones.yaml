@@ -1,0 +1,27 @@
+drone_num: 4
+
+swarm_config:
+  - drone_id: 0
+    init_pose:
+      x: 15.5
+      y: 2.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 1
+    init_pose:
+      x: 15.5
+      y: 0.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 2
+    init_pose:
+      x: 0.0
+      y: 2.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 3
+    init_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.375
+      yaw: 0.0

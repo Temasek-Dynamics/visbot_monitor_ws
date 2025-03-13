@@ -1,0 +1,23 @@
+topics:
+  - /tf
+  - /vins_estimator/vins_restart
+  - /vins_estimator/camera_pose
+  - /vins_estimator/extrinsic
+  - /mavros/imu/data_raw
+  - /mavros/vision_pose/pose
+  - /mavros/vision_pose/pose_reset
+  - /planning/trajectory
+  - /traj_server/heartbeat
+  - /broadcast_traj_from_planner
+  - /reference/flatsetpoint
+  - /target_reach
+  - /planning/goal
+  - /planning/trajectory
+  - /mavros/local_position/odom
+  - /broadcast_traj_to_planner
+  - /mavros/setpoint_raw/attitude
+  - /mavros/setpoint_raw/local
+  - /mavros/setpoint_position/local
+  - /mavros/local_position/pose
+  - /mavros/local_position/velocity_local
+  - /mavros/state

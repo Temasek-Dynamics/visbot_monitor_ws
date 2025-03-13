@@ -1,0 +1,59 @@
+<library path="lib/libswarm_rviz">
+ <class name="rviz/Start" type="rviz::Start" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with start cmd 
+    </description>
+ </class>
+ <class name="rviz/Stop" type="rviz::Stop" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with stop cmd 
+    </description>
+ </class>
+ <class name="rviz/Arm" type="rviz::Arm" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with arm cmd 
+    </description>
+ </class>
+ <class name="rviz/Unarm" type="rviz::Unarm" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with unarm cmd 
+    </description>
+ </class>
+ <class name="rviz/Takeoff" type="rviz::Takeoff" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with takeoff cmd 
+    </description>
+ </class>
+ <class name="rviz/Land" type="rviz::Land" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with land cmd 
+    </description>
+ </class>
+ <class name="rviz/Offboard" type="rviz::Offboard" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with offboard cmd 
+    </description>
+ </class>
+ <class name="rviz/PosCtl" type="rviz::PosCtl" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with PosCtl cmd 
+    </description>
+ </class>
+ <class name="rviz/SetInitPose" type="rviz::SetInitPose" base_class_type="rviz::Tool">
+    <description>
+        Publish an InitPose msg
+    </description>
+ </class>
+ <!-- Peter Modification -->
+ <class name="rviz/SetWayPoint" type="rviz::SetWayPoint" base_class_type="rviz::Tool">
+    <description>
+        Publish /control msg with SetPoint cmd
+    </description>
+ </class>
+ <!-- <class name="rviz/SetSeqPoint" type="rviz::SetSeqPoint" base_class_type="rviz::Tool">
+    <description>
+        Publish Bool value to start sequential_waypoints_mission.py
+    </description>
+ </class> -->
+ <!-- Peter Modification End -->
+</library>

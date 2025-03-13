@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="depth_topic" default="/visbot_itof/depth" />
+    <arg name="depth_info" default="/visbot_itof/depth_info" />
+    <arg name="pcl_topic" default="/visbot_monitor/pointcloud" />
+
+    <!-- Something weird is going on with the remapping here. -->
+    <!-- Although the topic is remapped to /visbot_itof/depth_info, the nodelet will create /visbot_itof/camera_info still subscribes to it -->
+    <!-- <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" />
+    <node pkg="nodelet" type="nodelet" name="depth2pcl"
+          args="load depth_image_proc/point_cloud_xyz nodelet_manager">
+      <remap from="camera_info" to="$(arg depth_info)"/>
+      <remap from="image_rect" to="$(arg depth_topic)"/>
+      <remap from="points" to="$(arg pcl_topic)"/>
+    </node> -->
+
+    <!-- <node pkg="visbot_monitor" type="tf_transform_for_test.py" name="depth_visualization" output="screen">
+      <remap from="/depth_topic" to="$(arg depth_topic)"/>
+    </node> -->
+
+    <node pkg="visbot_monitor" type="depth2pcl" name="depth2pcl" output="screen">
+      <param name="min_dist" value="0.1"/>
+      <param name="max_dist" value="7.0"/>
+      
+      <remap from="/depth/image_raw" to="$(arg depth_topic)"/>
+      <remap from="/depth/camera_info" to="$(arg depth_info)"/>
+      <remap from="/pointcloud" to="$(arg pcl_topic)"/>
+    </node>
+
+</launch>

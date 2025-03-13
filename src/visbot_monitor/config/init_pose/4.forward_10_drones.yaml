@@ -1,0 +1,79 @@
+drone_num: 12
+
+swarm_config:
+  - drone_id: 0
+    init_pose:
+      x: 0.0
+      y: 6.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 1
+    init_pose:
+      x: 0.0
+      y: 4.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 2
+    init_pose:
+      x: 0.0
+      y: 2.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 3
+    init_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 4
+    init_pose:
+      x: -2.0
+      y: 6.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 5
+    init_pose:
+      x: -2.0
+      y: 4.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 6
+    init_pose:
+      x: -2.0
+      y: 2.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 7
+    init_pose:
+      x: -2.0
+      y: 0.00
+      z: 0.375
+      yaw: 0.0
+    
+    ## 2rd drone
+  - drone_id: 8
+    init_pose:
+      x: -4.0
+      y: 4.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 9
+    init_pose:
+      x: -4.0
+      y: 2.00
+      z: 0.375
+      yaw: 0.0
+
+    ## backup 2rd drones
+  - drone_id: 10
+    init_pose:
+      x: -4.0
+      y: 4.00
+      z: 0.375
+      yaw: 0.0
+  - drone_id: 11
+    init_pose:
+      x: -4.0
+      y: 2.00
+      z: 0.375
+      yaw: 0.0

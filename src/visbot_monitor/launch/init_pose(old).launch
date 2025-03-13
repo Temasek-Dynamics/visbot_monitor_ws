@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Number of Drones -->
+    <param name="/drone_num" value="8" type="int"/>
+    <!--indoor test-->
+    <!-- <param name = "drone_id_0" value="0" type="int"/>
+    <param name = "init_pose_0_x" value="0.0" type="double"/>
+    <param name = "init_pose_0_y" value="0.0" type="double"/>
+    <param name = "init_pose_0_z" value="0.375" type="double"/>
+    <param name = "init_pose_0_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_1" value="1" type="int"/>
+    <param name = "init_pose_1_x" value="4.1" type="double"/>
+    <param name = "init_pose_1_y" value="2.3" type="double"/>
+    <param name = "init_pose_1_z" value="0.375" type="double"/>
+    <param name = "init_pose_1_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_2" value="2" type="int"/>
+    <param name = "init_pose_2_x" value="4.1" type="double"/>
+    <param name = "init_pose_2_y" value="2.3" type="double"/>
+    <param name = "init_pose_2_z" value="0.375" type="double"/>
+    <param name = "init_pose_2_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_3" value="3" type="int"/>
+    <param name = "init_pose_3_x" value="4.1" type="double"/>
+    <param name = "init_pose_3_y" value="2.3" type="double"/>
+    <param name = "init_pose_3_z" value="0.375" type="double"/>
+    <param name = "init_pose_3_yaw" value="0.0" type="double"/>  -->
+    <!--end of indoor test-->
+
+    <!-- Init Pose Pub （Forward flight)-->
+    <param name = "drone_id_0" value="0" type="int"/>
+    <param name = "init_pose_0_x" value="0.0" type="double"/>
+    <param name = "init_pose_0_y" value="6.40" type="double"/>
+    <param name = "init_pose_0_z" value="0.375" type="double"/>
+    <param name = "init_pose_0_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_1" value="1" type="int"/>
+    <param name = "init_pose_1_x" value="0.00" type="double"/>
+    <param name = "init_pose_1_y" value="4.00" type="double"/>
+    <param name = "init_pose_1_z" value="0.375" type="double"/>
+    <param name = "init_pose_1_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_2" value="2" type="int"/>
+    <param name = "init_pose_2_x" value="0.00" type="double"/>
+    <param name = "init_pose_2_y" value="2.00" type="double"/>
+    <param name = "init_pose_2_z" value="0.375" type="double"/>
+    <param name = "init_pose_2_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_3" value="3" type="int"/>
+    <param name = "init_pose_3_x" value="0.0" type="double"/>
+    <param name = "init_pose_3_y" value="0.0" type="double"/>
+    <param name = "init_pose_3_z" value="0.375" type="double"/>
+    <param name = "init_pose_3_yaw" value="0.0" type="double"/>  
+
+    <param name = "drone_id_4" value="4" type="int"/>
+    <param name = "init_pose_4_x" value="-2.0" type="double"/>
+    <param name = "init_pose_4_y" value="6.40" type="double"/>
+    <param name = "init_pose_4_z" value="0.375" type="double"/>
+    <param name = "init_pose_4_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_5" value="5" type="int"/>
+    <param name = "init_pose_5_x" value="-2.0" type="double"/>
+    <param name = "init_pose_5_y" value="4.00" type="double"/>
+    <param name = "init_pose_5_z" value="0.375" type="double"/>
+    <param name = "init_pose_5_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_6" value="6" type="int"/>
+    <param name = "init_pose_6_x" value="-2.0" type="double"/>
+    <param name = "init_pose_6_y" value="2.00" type="double"/>
+    <param name = "init_pose_6_z" value="0.375" type="double"/>
+    <param name = "init_pose_6_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_7" value="7" type="int"/>
+    <param name = "init_pose_7_x" value="-2.0" type="double"/>
+    <param name = "init_pose_7_y" value="0.00" type="double"/>
+    <param name = "init_pose_7_z" value="0.375" type="double"/>
+    <param name = "init_pose_7_yaw" value="0.0" type="double"/> 
+    <!--end of forward flight init pose-->
+
+    <!-- Init Pose Pub （Counter flight)-->
+    <!-- drone 1___drone 0 -->
+    <!-- drone 2___drone 3 (0,0) -->
+    <!-- <param name = "drone_id_0" value="0" type="int"/>
+    <param name = "init_pose_0_x" value="15.5" type="double"/>
+    <param name = "init_pose_0_y" value="0.00" type="double"/>
+    <param name = "init_pose_0_z" value="0.375" type="double"/>
+    <param name = "init_pose_0_yaw" value="0.0" type="double"/> 
+
+    <param name = "drone_id_1" value="1" type="int"/>
+    <param name = "init_pose_1_x" value="15.50" type="double"/>
+    <param name = "init_pose_1_y" value="2.00" type="double"/>
+    <param name = "init_pose_1_z" value="0.375" type="double"/>
+    <param name = "init_pose_1_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_2" value="2" type="int"/>
+    <param name = "init_pose_2_x" value="0.00" type="double"/>
+    <param name = "init_pose_2_y" value="2.00" type="double"/>
+    <param name = "init_pose_2_z" value="0.375" type="double"/>
+    <param name = "init_pose_2_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_3" value="3" type="int"/>
+    <param name = "init_pose_3_x" value="0.0" type="double"/>
+    <param name = "init_pose_3_y" value="0.0" type="double"/>
+    <param name = "init_pose_3_z" value="0.375" type="double"/>
+    <param name = "init_pose_3_yaw" value="0.0" type="double"/>  -->
+    <!--end of forward flight init pose-->
+
+    <!-- Init Pose Pub (Antipodal swap)-->
+    <!-- drone 1___drone 2 -->
+    <!-- drone 0___drone 3 (0,0) -->
+    <!-- <param name = "drone_id_0" value="0" type="int"/>
+    <param name = "init_pose_0_x" value="0.0" type="double"/>
+    <param name = "init_pose_0_y" value="7.07" type="double"/>
+    <param name = "init_pose_0_z" value="0.375" type="double"/>
+    <param name = "init_pose_0_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_1" value="1" type="int"/>
+    <param name = "init_pose_1_x" value="7.07" type="double"/>
+    <param name = "init_pose_1_y" value="7.07" type="double"/>
+    <param name = "init_pose_1_z" value="0.375" type="double"/>
+    <param name = "init_pose_1_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_2" value="2" type="int"/>
+    <param name = "init_pose_2_x" value="7.07" type="double"/>
+    <param name = "init_pose_2_y" value="0.00" type="double"/>
+    <param name = "init_pose_2_z" value="0.375" type="double"/>
+    <param name = "init_pose_2_yaw" value="0.0" type="double"/>
+
+    <param name = "drone_id_3" value="3" type="int"/>
+    <param name = "init_pose_3_x" value="0.0" type="double"/>
+    <param name = "init_pose_3_y" value="0.0" type="double"/>
+    <param name = "init_pose_3_z" value="0.375" type="double"/>
+    <param name = "init_pose_3_yaw" value="0.0" type="double"/>  -->
+    <!--end of antipodal swap init pose-->
+
+    <node pkg="visbot_monitor" name="init_pose_pub" type="init_pose_pub.py" output="screen"/>
+    
+       
+</launch>

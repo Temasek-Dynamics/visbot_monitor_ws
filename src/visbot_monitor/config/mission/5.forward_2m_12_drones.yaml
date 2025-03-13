@@ -1,0 +1,89 @@
+drone_num: 12
+
+waypoint_num: 1
+
+waypoints:
+  - waypoint_id: 0
+    position:
+      x: 2.0
+      y: 0.0
+      z: 1.2
+    yaw: 0.0
+
+swarm_matrix:
+  swarm_yaw: 0.0
+  drones:
+  - drone_id: 0
+    position:
+      x: 0.0
+      y: 6.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 1
+    position:
+      x: 0.0
+      y: 4.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 2
+    position:
+      x: 0.0
+      y: 2.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 3
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 4
+    position:
+      x: -2.0
+      y: 6.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 5
+    position:
+      x: -2.0
+      y: 4.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 6
+    position:
+      x: -2.0
+      y: 2.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 7
+    position:
+      x: -2.0
+      y: 0.0
+      z: 0.0
+    yaw: 0.0
+    
+    ## 2rd drone
+  - drone_id: 8
+    position:
+      x: -4.0
+      y: 6.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 9
+    position:
+      x: -4.0
+      y: 4.0
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 10
+    position:
+      x: -4.0
+      y: 2.00
+      z: 0.0
+    yaw: 0.0
+  - drone_id: 11
+    position:
+      x: -4.0
+      y: 0.00
+      z: 0.0
+    yaw: 0.0

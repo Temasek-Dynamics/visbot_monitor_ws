@@ -1,0 +1,31 @@
+captain_waypoint_num: 4
+
+owl2:
+  - Drone_ID: 0
+    drone_id: 0
+    drone_num: 8
+    IP: "192.168.2.20"
+    tgt_system: 20
+    MAV_SYS_ID: 20
+    gcs_url: "udp://:14550@"
+  - Drone_ID: 1
+    drone_id: 0
+    drone_num: 8
+    IP: "192.168.2.20"
+    tgt_system: 1
+    MAV_SYS_ID: 1
+    gcs_url: "udp://:14550@"
+  - Drone_ID: 2
+    drone_id: 0
+    drone_num: 8
+    IP: "192.168.2.20"
+    tgt_system: 1
+    MAV_SYS_ID: 1
+    gcs_url: "udp://:14550@"
+  - Drone_ID: 3
+    drone_id: 0
+    drone_num: 8
+    IP: "192.168.2.20"
+    tgt_system: 1
+    MAV_SYS_ID: 1
+    gcs_url: "udp://:14550@"

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="is_manual" value="true" type="bool"/>
+    
+    <arg name="yaml_file" default="$(find visbot_monitor)/config/mission_loop/rectangle_loop_1_drone.yaml" />
+    <rosparam file="$(arg yaml_file)" command="load" />
+
+    <node pkg="visbot_monitor" name="goal_repub" type="goal_repub.py" output="screen"/>
+    <node pkg="visbot_monitor" name="flight_mission" type="sequential_waypoints_loop.py" required="true" output="screen"/>
+</launch>

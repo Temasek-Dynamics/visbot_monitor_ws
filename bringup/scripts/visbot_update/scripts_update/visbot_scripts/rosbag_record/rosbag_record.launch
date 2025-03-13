@@ -1,0 +1,5 @@
+<launch>
+  <arg name="prefix" default="/home/visbot/UserData/bags/default_rosbag.bag"/>
+  <arg name="topics" default=""/>
+  <node pkg="rosbag" type="record" name="rosbag_record_node" output="screen" args="-O $(arg prefix) $(arg topics)"/>
+</launch>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="rviz_config" default="rviz.rviz" />
+    <arg name="config_dir" default="$(find visbot_monitor)/config/rviz" />
+
+    <node name="rviz" pkg="rviz" type="rviz"
+        args = "-d $(arg config_dir)/$(arg rviz_config)" />
+</launch>

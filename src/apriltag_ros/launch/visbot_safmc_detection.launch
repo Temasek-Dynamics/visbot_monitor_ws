@@ -1,0 +1,43 @@
+<launch>
+  <arg name="launch_prefix" default="" />
+  <arg name="camera_name" default="/usb_cam" />
+  <arg name="image_topic" default="image_raw" />
+  <arg name="queue_size" default="1" />
+  <arg name="uav_name" default="visbot"/>
+  <arg name="use_prename" default="false" />
+  <!-- total drone num -->
+  <arg name="drone_num" default="12" />
+  <!-- different visbot with different drone id OWL3:0-7 OWL2:8-11 -->
+  <arg name="drone_id" default="0" />
+  
+  <!-- usb camera -->
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch">
+  </include>
+
+  <!-- apriltag_ros continuous detection node -->
+  <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="apriltag_ros_continuous_node" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
+    <remap from="image_rect" to="$(arg camera_name)/$(arg image_topic)" />
+    <remap from="camera_info" to="$(arg camera_name)/camera_info" />
+    <remap from="tag_detections" to="/tag_detections" />
+
+    <param name="publish_tag_detections_image" type="bool" value="false" />
+    <param name="queue_size" type="int" value="$(arg queue_size)" />
+
+    <rosparam command="load" file="$(find apriltag_ros)/config/settings.yaml"/>
+    <rosparam command="load" file="$(find apriltag_ros)/config/tags.yaml"/>
+  </node>
+
+  <node pkg="apriltag_ros" type="tag_result_pub" name="tag_result_pub" output="screen" >
+      <param name="use_prename" value="$(arg use_prename)" />
+      <param name="uav_name" value="$(arg uav_name)" />
+      <param name="drone_num" value="$(arg drone_num)" />
+      <param name="drone_id" value="$(arg drone_id)" />
+      <param name="POSITION_THRESHOLD" value="1.5" />
+      <param name="VICTIM_num" value="8" />
+      <param name="DANGER_num" value="4" />
+      <!-- Camera offset to drone body frame -->
+      <param name="offset_x" value="0.0" />
+      <param name="offset_y" value="0.0" />
+      <param name="offset_z" value="0.0" />
+  </node>
+</launch>

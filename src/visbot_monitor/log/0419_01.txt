@@ -1,0 +1,11 @@
+Test 1
+manual fly
+
+Test 2 
+offboard Takeoff 2 position landing
+
+Test3
+2D Nav fly
+trans 2 102, 无人机旋转yaw负向，无人机抖动，此时captain会自动发送000， 0000，无2D Nav 发送
+可能的解决：先给2D Nav then switch 2 102
+echo /planning/goal 看captain是否有发不可解的orientation

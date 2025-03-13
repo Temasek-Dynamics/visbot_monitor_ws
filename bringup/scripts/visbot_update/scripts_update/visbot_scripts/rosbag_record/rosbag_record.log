@@ -1,0 +1,51 @@
+[33m[ WARN] [1609507949.434630762]: Shutdown request received.[0m
+[33m[ WARN] [1609507949.434718554]: Reason given for shutdown: [user request][0m
+[0m[ INFO] [1609507936.771961990]: Subscribing to /broadcast_traj_from_planner[0m
+[0m[ INFO] [1609507936.774365907]: Subscribing to /broadcast_traj_to_planner[0m
+[0m[ INFO] [1609507936.775950824]: Subscribing to /mavros/imu/data_raw[0m
+[0m[ INFO] [1609507936.777601949]: Subscribing to /mavros/local_position/odom[0m
+[0m[ INFO] [1609507936.779347866]: Subscribing to /mavros/local_position/pose[0m
+[0m[ INFO] [1609507936.780966324]: Subscribing to /mavros/local_position/velocity_local[0m
+[0m[ INFO] [1609507936.782586824]: Subscribing to /mavros/setpoint_position/local[0m
+[0m[ INFO] [1609507936.784174949]: Subscribing to /mavros/setpoint_raw/attitude[0m
+[0m[ INFO] [1609507936.785713200]: Subscribing to /mavros/setpoint_raw/local[0m
+[0m[ INFO] [1609507936.787430533]: Subscribing to /mavros/state[0m
+[0m[ INFO] [1609507936.789103533]: Subscribing to /mavros/vision_pose/pose[0m
+[0m[ INFO] [1609507936.790719658]: Subscribing to /mavros/vision_pose/pose_reset[0m
+[0m[ INFO] [1609507936.792303409]: Subscribing to /planning/goal[0m
+[0m[ INFO] [1609507936.793851867]: Subscribing to /planning/trajectory[0m
+[0m[ INFO] [1609507936.795878076]: Subscribing to /reference/flatsetpoint[0m
+[0m[ INFO] [1609507936.798128867]: Subscribing to /target_reach[0m
+[0m[ INFO] [1609507936.799746451]: Subscribing to /tf[0m
+[0m[ INFO] [1609507936.801370743]: Subscribing to /traj_server/heartbeat[0m
+[0m[ INFO] [1609507936.803056576]: Subscribing to /vins_estimator/camera_pose[0m
+[0m[ INFO] [1609507936.804631868]: Subscribing to /vins_estimator/extrinsic[0m
+[0m[ INFO] [1609507936.806329660]: Subscribing to /vins_estimator/vins_restart[0m
+[0m[ INFO] [1609507936.808424410]: Recording to '/home/visbot/UserData/bags/2021-01-01/rosbag_2021-01-01_13-32-15.bag'.[0m
+... logging to /home/visbot/.ros/log/fd814dc0-4c2f-11eb-bcd6-70f754b839d7/roslaunch-drone0-12020.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/visbot/ros_ws/src/visbot_scripts/rosbag_record/rosbag_record.launch
+[1mstarted roslaunch server http://drone0:45171/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+
+NODES
+  /
+    rosbag_record_node (rosbag/record)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/visbot/ros_ws/src/visbot_scripts/rosbag_record/rosbag_record.launch http://localhost:11311
+[1mprocess[rosbag_record_node-1]: started with pid [12036][0m
+[1m[rosbag_record_node-1] process has finished cleanly
+log file: /home/visbot/.ros/log/fd814dc0-4c2f-11eb-bcd6-70f754b839d7/rosbag_record_node-1*.log[0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

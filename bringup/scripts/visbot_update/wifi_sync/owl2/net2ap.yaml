@@ -1,0 +1,23 @@
+# ####################
+# Current Wifi (Net Mode)
+# ####################
+current_wifi_name: visbot_net_5GHz
+current_wifi_pwd: visbot12345678
+current_gateway: 192.168.2.254
+current_ips:
+  - 192.168.2.20
+  - 192.168.2.21
+  - 192.168.2.22
+  - 192.168.2.23
+
+# ####################
+# New Wifi (AP Mode)
+# ####################
+new_wifi_name: visbot_ap
+new_wifi_pwd: 12345678
+new_gateway: 192.168.2.1
+new_ips:
+  - 192.168.2.20
+  - 192.168.2.21
+  - 192.168.2.22
+  - 192.168.2.23

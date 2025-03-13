@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="yaml_file" default="$(find visbot_monitor)/config/init_pose/forward_8_drones.yaml" />
+    <rosparam file="$(arg yaml_file)" command="load" />
+
+    <node pkg="visbot_monitor" name="init_pose_pub" type="init_pose_pub.py" required="true" output="screen"/>
+</launch>

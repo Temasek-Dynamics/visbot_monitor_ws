@@ -1,0 +1,44 @@
+<launch>
+
+  <arg name="drone_id" default="0"/>
+  <arg name="drone_num" default="16"/>
+  <arg name="commander" default="false"/>
+
+  <rosparam file="/opt/datafs/config/swarm_param.yaml" command="load" />
+
+  <node pkg="ros_proxy" name="ros_proxy" type="ros_proxy" output="screen">
+  
+    <remap from="~my_odom" to="/mavros/local_position/odom"/>
+    <remap from="~point_cloud" to="/ego_planner_node/grid_map/occupancy"/>
+    <remap from="/initpose" to="/vins_estimator/vins_restart"/>
+    <remap from="/goal" to="/move_base_simple/goal"/>
+
+    <remap from="~drone_id" to="/drone_id"/>
+    <remap from="~drone_num" to="/drone_num"/>
+
+    <param name="is_commander" value="$(arg commander)"/>
+    <param name="commander_ip" value="tcp://192.168.2.101:18099" type="string"/>
+    <!-- <param name="commander_ip" value="tcp://192.168.2.100:18099" type="string"/> -->
+
+    <param name="drone_ip_0" value="tcp://192.168.2.20:18010" type="string"/>
+    <param name="drone_ip_1" value="tcp://192.168.2.21:18011" type="string"/>
+    <param name="drone_ip_2" value="tcp://192.168.2.22:18012" type="string"/>
+    <param name="drone_ip_3" value="tcp://192.168.2.23:18013" type="string"/>
+    <param name="drone_ip_4" value="tcp://192.168.2.24:18014" type="string"/>
+    <param name="drone_ip_5" value="tcp://192.168.2.25:18015" type="string"/>
+    <param name="drone_ip_6" value="tcp://192.168.2.26:18016" type="string"/>
+    <param name="drone_ip_7" value="tcp://192.168.2.27:18017" type="string"/>
+    <param name="drone_ip_8" value="tcp://192.168.2.28:18018" type="string"/>
+    <param name="drone_ip_9" value="tcp://192.168.2.29:18019" type="string"/>
+    <param name="drone_ip_10" value="tcp://192.168.2.30:18020" type="string"/>
+    <param name="drone_ip_11" value="tcp://192.168.2.31:18021" type="string"/>
+    <param name="drone_ip_12" value="tcp://192.168.2.32:18022" type="string"/>
+    <param name="drone_ip_13" value="tcp://192.168.2.33:18023" type="string"/>
+    <param name="drone_ip_14" value="tcp://192.168.2.34:18024" type="string"/>
+    <param name="drone_ip_15" value="tcp://192.168.2.35:18025" type="string"/>
+    <param name="drone_ip_16" value="tcp://192.168.2.36:18026" type="string"/>
+    <param name="odom_hz" value="30"/>
+
+  </node>
+
+</launch>

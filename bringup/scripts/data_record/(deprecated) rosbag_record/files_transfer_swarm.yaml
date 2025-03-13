@@ -1,0 +1,17 @@
+# Please update the following values to match your setup
+test_name: Indoor-Tests
+test_date: 2024-07-08
+drones:
+  - id: 0
+    start_log: 494
+    end_log: 496
+  - id: 1
+    start_log: 303
+    end_log: 305
+  - id: 2
+    start_log: 172
+    end_log: 173
+  - id: 3
+    start_log: 219
+    end_log: 220
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="drone_num" default="10"/>
+
+    <node name="swarm_gui_node" pkg="swarm_gui" type="main.py" output="screen">
+        <param name="drone_num" value="$(arg drone_num)"/>
+    </node>
+</launch>

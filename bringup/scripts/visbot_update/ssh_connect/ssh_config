@@ -1,0 +1,33 @@
+# Add the following to your ~/.ssh/config file to easily ssh into the OWL swarm
+
+Host visbot20
+  HostName 192.168.2.20
+  User visbot
+
+Host visbot21
+  HostName 192.168.2.21
+  User visbot
+
+Host visbot22
+  HostName 192.168.2.22
+  User visbot
+
+Host visbot23
+  HostName 192.168.2.23
+  User visbot
+
+Host visbot30
+  HostName 192.168.2.30
+  User visbot
+
+Host visbot31
+  HostName 192.168.2.31
+  User visbot
+
+Host visbot32
+  HostName 192.168.2.32
+  User visbot
+
+Host visbot33
+  HostName 192.168.2.33
+  User visbot

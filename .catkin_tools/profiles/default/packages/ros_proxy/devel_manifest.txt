@@ -1,0 +1,8 @@
+ros_proxy
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/cmake.lock /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/./cmake.lock
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/share/ros_proxy/cmake/ros_proxyConfig-version.cmake /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/share/ros_proxy/cmake/ros_proxyConfig-version.cmake
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/share/ros_proxy/cmake/ros_proxyConfig.cmake /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/share/ros_proxy/cmake/ros_proxyConfig.cmake
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/lib/libCameraPoseVisualization.so /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/lib/libCameraPoseVisualization.so
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/lib/ros_proxy/ros_proxy_safmc /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/lib/ros_proxy/ros_proxy_safmc
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/lib/ros_proxy/ros_proxy /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/lib/ros_proxy/ros_proxy
+/home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/.private/ros_proxy/lib/pkgconfig/ros_proxy.pc /home/tlab-uav/VisBot_Drone/visbot_monitor_ws/devel/lib/pkgconfig/ros_proxy.pc

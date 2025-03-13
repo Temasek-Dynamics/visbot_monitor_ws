@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Number of Drones -->
+    <param name="/drone_num" value="8" type="int"/>
+
+    <!-- Waypoints Publishing Mode -->
+    <param name="is_manual" value="true" type="bool"/>  <!-- Publish waypoints one by one manually to test single drone performance-->
+    <!-- <param name="is_manual" value="false" type="bool"/> --> <!-- Publish sequencial waypoints automatically to test swarm performance -->
+
+    <!-- Waypoints Setup -->
+    <param name="/waypoint_num" value="3" type="int"/>
+
+
+    <!--select one-->
+    <!--forward flight-->
+    <param name="waypoint0_x" value="2" type="double"/>
+    <param name="waypoint0_y" value="-0.0" type="double"/>
+    
+    <!--counter flight-->
+    <!-- <param name="waypoint0_x" value="0" type="double"/>
+    <param name="waypoint0_y" value="1.5" type="double"/> -->
+    
+
+    <!--indoor test-->
+    <!-- <param name="waypoint0_x" value="1.5" type="double"/>
+    <param name="waypoint0_y" value="0.6" type="double"/> -->
+    <!--end of select one-->
+    <param name="waypoint0_z" value="1.2" type="double"/>
+    <param name="waypoint0_yaw_rad" value="1.57" type="double"/>
+    
+    <param name="waypoint1_x" value="3.0" type="double"/>
+    <param name="waypoint1_y" value="1.0" type="double"/>
+    <param name="waypoint1_z" value="1.2" type="double"/>
+    <param name="waypoint1_yaw_rad" value="3.14" type="double"/>
+    
+    <param name="waypoint2_x" value="0.0" type="double"/>
+    <param name="waypoint2_y" value="0.0" type="double"/>
+    <param name="waypoint2_z" value="1.2" type="double"/>
+    <param name="waypoint2_yaw_rad" value="-1.57" type="double"/>
+    
+    <!-- <param name="waypoint3_x" value="0.0" type="double"/>
+    <param name="waypoint3_y" value="0.0" type="double"/>
+    <param name="waypoint3_z" value="1.2" type="double"/>
+    <param name="waypoint3_yaw_rad" value="0.00" type="double"/> -->
+
+    <!-- Swarm Matrix -->
+    <param name="swarm_yaw" value="0" type="double"/>
+    <!-- Define Swarm Configuration according to "/drone_num" -->
+    
+
+    <!--indoor test-->
+    <!-- <param name="swarm0_x" value="2.6" type="double"/>
+    <param name="swarm0_y" value="0.7" type="double"/>
+    <param name="swarm0_z" value="0.0" type="double"/>
+    <param name="swarm0_yaw" value="0.0" type="double"/>
+
+    <param name="swarm1_x" value="0.0" type="double"/>
+    <param name="swarm1_y" value="-0.8" type="double"/>
+    <param name="swarm1_z" value="0.0" type="double"/>
+    <param name="swarm1_yaw" value="0.0" type="double"/>
+
+    <param name="swarm2_x" value="0.0" type="double"/>
+    <param name="swarm2_y" value="-0.8" type="double"/>
+    <param name="swarm2_z" value="0.0" type="double"/>
+    <param name="swarm2_yaw" value="0.0" type="double"/>
+
+    <param name="swarm3_x" value="0.0" type="double"/>
+    <param name="swarm3_y" value="-0.8" type="double"/>
+    <param name="swarm3_z" value="0.0" type="double"/>
+    <param name="swarm3_yaw" value="0.0" type="double"/> -->
+    <!--end of indoor test-->
+
+    <!-- Forward flight-->
+    <param name="swarm0_x" value="0.0" type="double"/>
+    <param name="swarm0_y" value="6.4" type="double"/>
+    <param name="swarm0_z" value="0.0" type="double"/>
+    <param name="swarm0_yaw" value="0.0" type="double"/>
+
+    <param name="swarm1_x" value="0.0" type="double"/>
+    <param name="swarm1_y" value="4.0" type="double"/>
+    <param name="swarm1_z" value="0.0" type="double"/>
+    <param name="swarm1_yaw" value="0.0" type="double"/>
+
+    <param name="swarm2_x" value="0.0" type="double"/>
+    <param name="swarm2_y" value="2.0" type="double"/>
+    <param name="swarm2_z" value="0.0" type="double"/>
+    <param name="swarm2_yaw" value="0.0" type="double"/>
+
+    <param name="swarm3_x" value="0.0" type="double"/>
+    <param name="swarm3_y" value="0.0" type="double"/>
+    <param name="swarm3_z" value="0.0" type="double"/>
+    <param name="swarm3_yaw" value="0.0" type="double"/>
+
+    <param name="swarm4_x" value="-2.0" type="double"/>
+    <param name="swarm4_y" value="6.4" type="double"/>
+    <param name="swarm4_z" value="0.0" type="double"/>
+    <param name="swarm4_yaw" value="0.0" type="double"/>
+
+    <param name="swarm5_x" value="-2.0" type="double"/>
+    <param name="swarm5_y" value="4.0" type="double"/>
+    <param name="swarm5_z" value="0.0" type="double"/>
+    <param name="swarm5_yaw" value="0.0" type="double"/>
+
+    <param name="swarm6_x" value="-2.0" type="double"/>
+    <param name="swarm6_y" value="2.0" type="double"/>
+    <param name="swarm6_z" value="0.0" type="double"/>
+    <param name="swarm6_yaw" value="0.0" type="double"/>
+
+    <param name="swarm7_x" value="-2.0" type="double"/>
+    <param name="swarm7_y" value="0.0" type="double"/>
+    <param name="swarm7_z" value="0.0" type="double"/>
+    <param name="swarm7_yaw" value="0.0" type="double"/>
+    <!--end of forward flight-->
+
+    <!-- Counter flight-->
+    <!-- drone 1___drone 0 -->
+    <!-- drone 2___drone 3 (0,0) -->
+    <!-- <param name="swarm0_x" value="0.00" type="double"/>
+    <param name="swarm0_y" value="0.0" type="double"/>
+    <param name="swarm0_z" value="0.0" type="double"/>
+    <param name="swarm0_yaw" value="0.0" type="double"/>
+
+    <param name="swarm1_x" value="0.0" type="double"/>
+    <param name="swarm1_y" value="2.0" type="double"/>
+    <param name="swarm1_z" value="0.0" type="double"/>
+    <param name="swarm1_yaw" value="0.0" type="double"/>
+
+    <param name="swarm2_x" value="15.5" type="double"/>
+    <param name="swarm2_y" value="2.0" type="double"/>
+    <param name="swarm2_z" value="0.0" type="double"/>
+    <param name="swarm2_yaw" value="0.0" type="double"/>
+
+    <param name="swarm3_x" value="15.5" type="double"/>
+    <param name="swarm3_y" value="0.0" type="double"/>
+    <param name="swarm3_z" value="0.0" type="double"/>
+    <param name="swarm3_yaw" value="0.0" type="double"/> -->
+    <!--end of counter flight-->
+
+    <!-- (Antipodal swap) goal-->
+    <!-- drone 1___drone 2 -->
+    <!-- drone 0___drone 3 (0,0) -->
+    <!-- <param name="swarm0_x" value="7.07" type="double"/>
+    <param name="swarm0_y" value="0.0" type="double"/>
+    <param name="swarm0_z" value="0.0" type="double"/>
+    <param name="swarm0_yaw" value="0.0" type="double"/>
+
+    <param name="swarm1_x" value="0.0" type="double"/>
+    <param name="swarm1_y" value="0.0" type="double"/>
+    <param name="swarm1_z" value="0.0" type="double"/>
+    <param name="swarm1_yaw" value="0.0" type="double"/>
+
+    <param name="swarm2_x" value="0.0" type="double"/>
+    <param name="swarm2_y" value="7.07" type="double"/>
+    <param name="swarm2_z" value="0.0" type="double"/>
+    <param name="swarm2_yaw" value="0.0" type="double"/>
+
+    <param name="swarm3_x" value="7.07" type="double"/>
+    <param name="swarm3_y" value="7.07" type="double"/>
+    <param name="swarm3_z" value="0.0" type="double"/>
+    <param name="swarm3_yaw" value="0.0" type="double"/> -->
+    <!--end of antipodal swap-->
+    
+
+    <node pkg="visbot_monitor" name="goal_repub" type="goal_repub.py" output="screen"/>
+    <node pkg="visbot_monitor" name="ground_station_mission" type="sequential_waypoints_mission.py" output="screen"/>
+       
+</launch>

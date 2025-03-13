@@ -1,0 +1,17 @@
+# Please update the following values to match your setup
+dir_name: 8-drones-test
+test_name: MPSH-Indoor-Tests
+test_date: 2024-09-26
+drone_ips:
+  - 192.168.2.30
+  - 192.168.2.31
+  - 192.168.2.32
+  - 192.168.2.33
+  - 192.168.2.34
+  - 192.168.2.35
+  - 192.168.2.36
+  - 192.168.2.37
+  - 192.168.2.20
+  - 192.168.2.21
+  - 192.168.2.22
+  - 192.168.2.23

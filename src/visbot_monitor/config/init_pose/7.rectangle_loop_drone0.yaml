@@ -1,0 +1,9 @@
+drone_num: 1
+
+swarm_config:
+  - drone_id: 0
+    init_pose:
+      x: 0.0
+      y: 0.00
+      z: 0.375
+      yaw: 0.0
