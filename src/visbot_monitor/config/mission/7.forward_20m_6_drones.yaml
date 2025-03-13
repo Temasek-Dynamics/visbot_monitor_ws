@@ -19,12 +19,12 @@ waypoints:
 swarm_matrix:
   swarm_yaw: 0.0
   drones:
-  - drone_id: 0
-    position:
-      x: 0.0
-      y: 10.0
-      z: 0.0
-    yaw: 0.0
+  # - drone_id: 0
+  #   position:
+  #     x: 0.0
+  #     y: 10.0
+  #     z: 0.0
+  #   yaw: 0.0
   - drone_id: 1
     position:
       x: 0.0

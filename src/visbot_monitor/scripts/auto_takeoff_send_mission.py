@@ -17,7 +17,7 @@ class SequentialWpsMission:
         self.wps_list = []
         self.wps_msg_list = []
         self.current_wp = 0
-        
+    
         # Single drone test: manually set /target_reach and switch to next waypoint
         self.is_manual_reach = rospy.get_param("/is_manual", True)
         
@@ -103,7 +103,7 @@ class SequentialWpsMission:
                                                       self.wps_list[i][3]))
     
     def drone_target_reach_callback(self, msg,drone_id):
-        self.drone_reach_list[drone_id] = msg.data
+        self.drone_reach_list.append(msg.data)
         
     def manual_switch_callback(self, msg):
         self.manual_switch = msg.data
@@ -123,7 +123,7 @@ class SequentialWpsMission:
             if NEXT_COND:
 
                 # publish the next waypoint
-                print("will move to: \n",self.wps_msg_list[self.current_wp])
+                print("will move to: \n",self.wps_msg_list[self.current_wp].pose)
                 self.wps_pose_pub.publish(self.wps_msg_list[self.current_wp])
 
 
@@ -159,6 +159,14 @@ class SequentialWpsMission:
         captain_task_cmd.cmd=102 # 102: go to current preset waypoint(swarm center), with Obstacle Avoidance
         captain_task_cmd.drone_id=-1
         self.captain_task_pub.publish(captain_task_cmd)
+    
+    def pub_takeoff_task(self):
+        captain_task_cmd = control()
+        captain_task_cmd.header.stamp = rospy.Time.now()
+        captain_task_cmd.drone_id=-1
+        captain_task_cmd.cmd=20
+        self.captain_task_pub.publish(captain_task_cmd)
+
 
 def str_to_bool(s):
     if s.lower() in ['yes']:
@@ -180,13 +188,21 @@ if __name__ == '__main__':
     print("-"*50)
     print("#"*50)    
     
+
+    # takeoff all Drones!
+    print("\033[31m All drones will takeoff!, sleep 20s waiting for the drones to take off \033[0m")
+    rospy.sleep(2)
+    seq_wps_m.pub_takeoff_task()
+    rospy.sleep(20)
+
+    
     rate = rospy.Rate(1)
     while not rospy.is_shutdown():
         if seq_wps_m.current_wp < len(seq_wps_m.wps_msg_list):
-            print("Next waypoint is: \n", seq_wps_m.wps_msg_list[seq_wps_m.current_wp], "\n")
-          
-            manual_switch_input = input("Enter 'yes' to switch to next waypoint : \n ")
-            seq_wps_m.manual_switch = str_to_bool(manual_switch_input)
+            # print("Next waypoint is: \n", seq_wps_m.wps_msg_list[seq_wps_m.current_wp], "\n")
+            rospy.sleep(1)
+            
+            seq_wps_m.manual_switch = True
             
             print("-"*50)
             print("this round input result is:\n")
@@ -194,7 +210,8 @@ if __name__ == '__main__':
             if seq_wps_m.manual_switch:
                 seq_wps_m.pub_latest_wps() 
                 print("has published the latest waypoint and execute now")    
-
+                print("\033[33m wait 40s for the drones to reach the waypoint\033[0m")
+                rospy.sleep(40)
             else:
                 print("wait for next switch, nothing published")
 

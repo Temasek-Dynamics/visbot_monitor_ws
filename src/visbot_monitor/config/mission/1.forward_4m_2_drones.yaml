@@ -1,4 +1,4 @@
-drone_num: 4
+drone_num: 4 # useless now
 
 waypoint_num: 1
 

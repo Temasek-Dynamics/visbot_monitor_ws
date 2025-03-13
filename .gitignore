@@ -1,0 +1,6 @@
+*.log
+build
+devel
+.catkin_tools
+.history
+logs
