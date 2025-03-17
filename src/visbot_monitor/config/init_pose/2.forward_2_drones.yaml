@@ -1,10 +1,10 @@
-drone_num: 3
+drone_num: 2
 
 swarm_config:
   - drone_id: 0
     init_pose:
       x: 0.0
-      y: -1.0
+      y: 2.0
       z: 0.375
       yaw: 0.0
   - drone_id: 1
@@ -13,9 +13,4 @@ swarm_config:
       y: 0.00
       z: 0.375
       yaw: 0.0
-  - drone_id: 2
-    init_pose:
-      x: 0.0
-      y: 2.0
-      z: 0.375
-      yaw: 0.0
+

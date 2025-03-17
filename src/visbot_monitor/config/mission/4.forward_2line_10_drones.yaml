@@ -1,13 +1,13 @@
-drone_num: 12
+drone_num: 10
 
 waypoint_num: 1
 
 waypoints:
   - waypoint_id: 0
     position:
-      x: 35.0
+      x: 14.0
       y: 0.0
-      z: 1.5
+      z: 1.2
     yaw: 0.0
 
 swarm_matrix:
@@ -16,7 +16,7 @@ swarm_matrix:
   - drone_id: 0
     position:
       x: 0.0
-      y: 6.0
+      y: 0.0
       z: 0.0
     yaw: 0.0
   - drone_id: 1
@@ -28,64 +28,70 @@ swarm_matrix:
   - drone_id: 2
     position:
       x: 0.0
-      y: 2.0
+      y: 7.0
       z: 0.0
     yaw: 0.0
   - drone_id: 3
     position:
       x: 0.0
-      y: 0.0
+      y: 10.0
       z: 0.0
     yaw: 0.0
   - drone_id: 4
     position:
-      x: -2.0
-      y: 6.0
+      x: 0.0
+      y: 13.0
       z: 0.0
     yaw: 0.0
   - drone_id: 5
     position:
-      x: -2.0
-      y: 4.0
+      x: 0.0
+      y: 17.0
       z: 0.0
     yaw: 0.0
+    ## 2nd line 1rd drone(lidar)
   - drone_id: 6
     position:
-      x: -2.0
-      y: 2.0
+      x: - #-(14-y)+2+1
+      y: 9  #8+x/2-2-1
       z: 0.0
     yaw: 0.0
+    ## 2nd line 3rd drone
   - drone_id: 7
     position:
-      x: -2.0
-      y: 0.0
+      x: -4.0 #-(14-y-x)-2
+      y: 10.0 #8+x/2-2
       z: 0.0
     yaw: 0.0
     
     ## 2rd drone
+    ## 2nd line 4th drone
   - drone_id: 8
     position:
-      x: -4.0
-      y: 4.0
+      x: -4.0 #-(14-y-x)-2
+      y: 6.0 #8-x/2+2
       z: 0.0
     yaw: 0.0
+
+    ## backup drone
   - drone_id: 9
     position:
-      x: -4.0
-      y: 2.0
+      x: -6.0
+      y: 0.0
       z: 0.0
     yaw: 0.0
     
-    ## backup 2rd drones
+    ## 2nd line 2nd drone(lidar)
   - drone_id: 10
     position:
-      x: -4.0
-      y: 4.00
+      x: -8 #-(14-y)+2
+      y: 6 #8-x/2+2
       z: 0.0
     yaw: 0.0
+    ## backup drone
   - drone_id: 11
     position:
-      x: -4.0
-      y: 2.00
+      x: -6.0
+      y: 3.00
       z: 0.0
     yaw: 0.0

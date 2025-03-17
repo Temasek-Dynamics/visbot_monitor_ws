@@ -190,10 +190,10 @@ if __name__ == '__main__':
     
 
     # takeoff all Drones!
-    print("\033[31m All drones will takeoff!, sleep 20s waiting for the drones to take off \033[0m")
+    print("\033[31m All drones will takeoff!, sleep 15s waiting for the drones to take off \033[0m")
     rospy.sleep(2)
     seq_wps_m.pub_takeoff_task()
-    rospy.sleep(20)
+    rospy.sleep(15)
 
     
     rate = rospy.Rate(1)

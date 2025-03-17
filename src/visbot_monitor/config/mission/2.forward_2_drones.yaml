@@ -1,11 +1,11 @@
-drone_num: 3
+drone_num: 2
 
 waypoint_num: 1
 
 waypoints:
   - waypoint_id: 0
     position:
-      x: 9.0
+      x: 3.0
       y: 0.0
       z: 1.2
     yaw: 0.0
@@ -16,19 +16,14 @@ swarm_matrix:
   - drone_id: 0
     position:
       x: 0.0
-      y: 0.0
+      y: 2.0
       z: 0.0
     yaw: 0.0
   - drone_id: 1
     position:
       x: 0.0
-      y: 1.0
+      y: 0.0
       z: 0.0
     yaw: 0.0
-  - drone_id: 2
-    position:
-      x: 0.0
-      y: 2.0
-      z: 0.0
-    yaw: 0.0
+
  
